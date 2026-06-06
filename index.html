@@ -21,7 +21,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.6;min-height:100vh;overflow-x:hidden;}
- 
+
 /* ── TOP BAR ── */
 .topbar{
   background:var(--s1);border-bottom:1px solid var(--border);
@@ -35,11 +35,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .tab-btn{padding:8px 12px;border:none;background:none;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;letter-spacing:0.3px;flex-shrink:0;}
 .tab-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
 .tb-day{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--gold);flex-shrink:0;margin-left:8px;}
- 
+
 /* ── PAGES ── */
 .page{display:none;padding:16px 16px 100px;max-width:680px;margin:0 auto;width:100%;}
 .page.active{display:block;}
- 
+
 /* ── PLAYER SELECT ── */
 .player-select{position:fixed;inset:0;background:var(--bg);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;}
 .ps-logo{font-family:'Bebas Neue',sans-serif;font-size:52px;letter-spacing:3px;color:var(--text);margin-bottom:4px;}
@@ -58,7 +58,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .ps-connecting{font-size:11px;color:var(--muted);margin-top:24px;display:flex;align-items:center;gap:8px;}
 .ps-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 1.2s ease-in-out infinite;}
 @keyframes pulse{0%,100%{opacity:0.3;}50%{opacity:1;}}
- 
+
 /* ── SYNC BAR ── */
 .sync-bar{position:fixed;bottom:0;left:0;right:0;z-index:500;padding:6px 16px;display:flex;align-items:center;gap:8px;background:rgba(10,10,12,0.97);border-top:1px solid var(--border);font-size:10px;backdrop-filter:blur(8px);}
 .sync-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
@@ -69,7 +69,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .sync-player{font-weight:700;margin-left:auto;font-size:10px;}
 .sync-player.her{color:var(--her);}
 .sync-player.him{color:var(--him);}
- 
+
 /* ── SHARED COMPONENTS ── */
 .section-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;padding:4px 0;}
 .section-title{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--text);letter-spacing:0.5px;margin-bottom:12px;}
@@ -96,7 +96,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .bar-him{background:var(--him);}
 .bar-gold{background:var(--gold);}
 .bar-green{background:#5A9E6A;}
- 
+
 /* ── SCOREBOARD ── */
 .scoreboard{display:grid;grid-template-columns:1fr auto 1fr;background:var(--s1);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:16px;}
 .sb-player{padding:20px 14px;text-align:center;}
@@ -115,7 +115,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .sb-lead{font-size:8px;letter-spacing:1px;text-transform:uppercase;margin-top:5px;text-align:center;line-height:1.6;}
 .lead-bar{width:60px;height:4px;background:var(--s3);border-radius:2px;overflow:hidden;margin:6px 0;}
 .lead-fill{height:100%;border-radius:2px;transition:width 0.5s ease;}
- 
+
 /* ── WEEK BANNER ── */
 .week-banner{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
 .wb-label{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:3px;}
@@ -124,7 +124,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .wb-prize-lbl{font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:2px;}
 .prize-input{background:transparent;border:none;color:var(--text);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;width:160px;text-align:center;outline:none;}
 .prize-input::placeholder{color:var(--muted);}
- 
+
 /* ── LOG CARDS ── */
 .log-card{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px;}
 .log-card.her{border-top:3px solid var(--her);}
@@ -147,7 +147,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .lock-btn.her{background:var(--her-dim);color:var(--her);border:1px solid var(--her-glow);}
 .lock-btn.him{background:var(--him-dim);color:var(--him);border:1px solid var(--him-glow);}
 .lock-btn.locked{opacity:0.4;cursor:not-allowed;}
- 
+
 /* ── HISTORY / BOARD ── */
 .grand-banner{background:linear-gradient(135deg,#1A1008,#120A1A);border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:24px;text-align:center;margin-bottom:16px;position:relative;overflow:hidden;}
 .grand-banner::before{content:'🏆';position:absolute;font-size:100px;opacity:0.05;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
@@ -172,7 +172,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .hr-win.her{background:var(--her-dim);color:var(--her);}
 .hr-win.him{background:var(--him-dim);color:var(--him);}
 .hr-win.tie{background:var(--gold-dim);color:var(--gold);}
- 
+
 /* ── CHALLENGES ── */
 .ch-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
 .ch-card{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;transition:border-color 0.2s;}
@@ -194,7 +194,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .prc-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.03);font-size:10px;}
 .prc-row:last-child{border-bottom:none;}
 .prc-val{font-family:'Bebas Neue',sans-serif;font-size:15px;color:var(--gold);}
- 
+
 /* ── HEALTH COMPONENTS ── */
 .week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:16px;overflow-x:auto;}
 .day-card{border-radius:8px;padding:10px 6px;text-align:center;border:1px solid var(--border);background:var(--s2);min-width:44px;}
@@ -307,11 +307,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .dash-hero h2{font-family:'Bebas Neue',sans-serif;font-size:34px;line-height:1;margin-bottom:6px;}
 .dash-hero h2 span{color:var(--gold);}
 .dash-hero p{font-size:11px;color:var(--muted);line-height:1.7;}
- 
+
 /* ── TOAST ── */
 .g-toast{position:fixed;bottom:40px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:10px 18px;font-size:12px;font-weight:600;transition:transform 0.3s;z-index:9999;white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,0.6);}
 .g-toast.show{transform:translateX(-50%) translateY(0);}
- 
+
 /* ── MOBILE TWEAKS ── */
 @media(max-width:480px){
   .grid-2{grid-template-columns:1fr !important;}
@@ -327,7 +327,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 </style>
 </head>
 <body>
- 
+
 <!-- PLAYER SELECT -->
 <div class="player-select" id="player-select">
   <div class="ps-logo">Project <span>AA1</span></div>
@@ -347,14 +347,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
   </div>
   <div class="ps-connecting"><div class="ps-dot"></div><span>Connecting to AA1...</span></div>
 </div>
- 
+
 <!-- SYNC BAR -->
 <div class="sync-bar" id="sync-bar" style="display:none;">
   <div class="sync-dot" id="sync-dot"></div>
   <span class="sync-label" id="sync-label">Connecting...</span>
   <span class="sync-player" id="sync-player-lbl"></span>
 </div>
- 
+
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="tb-logo">AA<span>1</span></div>
@@ -367,10 +367,11 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <button class="tab-btn" onclick="tab('eat',this)">Eat</button>
     <button class="tab-btn" onclick="tab('shop',this)">Shop</button>
     <button class="tab-btn" onclick="tab('more',this)">More</button>
+    <button class="tab-btn" onclick="tab('progress',this)">📊 Progress</button>
   </div>
   <div class="tb-day" id="dayCounter">Day 1</div>
 </div>
- 
+
 <!-- ══ HOME ══ -->
 <div class="page active" id="page-home">
   <div class="dash-hero">
@@ -409,9 +410,10 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="qn-card" onclick="tab('shop',null)"><span class="qn-icon">🛒</span><span class="qn-label">Shopping</span><span class="qn-sub">Tap to check off</span></div>
     <div class="qn-card" onclick="tab('board',null)"><span class="qn-icon">📊</span><span class="qn-label">Leaderboard</span><span class="qn-sub">Weekly wins</span></div>
     <div class="qn-card" onclick="tab('more',null)"><span class="qn-icon">📦</span><span class="qn-label">More</span><span class="qn-sub">Macros, prep, supps</span></div>
+    <div class="qn-card" onclick="tab('progress',null)" style="border-color:rgba(201,168,76,0.3);background:rgba(201,168,76,0.04);"><span class="qn-icon">📊</span><span class="qn-label" style="color:var(--gold);">Progress</span><span class="qn-sub">Body scan tracker</span></div>
   </div>
 </div>
- 
+
 <!-- ══ GAME TODAY ══ -->
 <div class="page" id="page-game">
   <div class="scoreboard">
@@ -466,7 +468,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <button class="lock-btn him" id="g-him-lock" onclick="gSubmit('him')">Lock In My Day</button>
   </div>
 </div>
- 
+
 <!-- ══ BOARD ══ -->
 <div class="page" id="page-board">
   <div class="page-eyebrow">Competition</div>
@@ -496,7 +498,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <button onclick="gReset()" style="background:rgba(224,85,85,0.08);border:1px solid rgba(224,85,85,0.2);color:var(--red);padding:9px 18px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;">Reset Game Data</button>
   </div>
 </div>
- 
+
 <!-- ══ MISSIONS ══ -->
 <div class="page" id="page-missions">
   <div class="page-eyebrow">Bonus Points</div>
@@ -513,7 +515,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="pts-rule-card"><span class="prc-cat">Lifestyle</span><div class="prc-row"><span>Supplements</span><span class="prc-val">+5</span></div><div class="prc-row"><span>Water</span><span class="prc-val">+5</span></div><div class="prc-row"><span>Sleep</span><span class="prc-val">+10</span></div></div>
   </div>
 </div>
- 
+
 <!-- ══ TRAIN ══ -->
 <div class="page" id="page-train">
   <div class="page-eyebrow">Training Protocol</div>
@@ -564,7 +566,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <tr><td><span class="ex-name">Jump Squat</span><span class="ex-note">Impact = bone density stimulus.</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">3×12</span></td></tr>
     </table></div>
   </div>
- 
+
   <div class="section-title" style="color:var(--him);margin-top:20px;">Ahmed's Week — Mon–Sat</div>
   <div class="week-grid" style="margin-bottom:16px;">
     <div class="day-card lift-him"><span class="dc-day">Mon</span><span class="dc-icon">🦵</span><span class="dc-label">Lower A</span><span class="dc-dur">40m</span></div>
@@ -576,27 +578,73 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="day-card rest"><span class="dc-day">Sun</span><span class="dc-icon">😴</span><span class="dc-label">Rest</span><span class="dc-dur">—</span></div>
   </div>
   <div class="accordion" onclick="this.classList.toggle('open')">
-    <div class="acc-header"><div class="acc-left"><span class="acc-icon">🦵</span><div><span class="acc-tag">Monday</span><span class="acc-title">Lower A — Quads & Glutes</span></div></div><div class="acc-right"><span class="acc-meta">40 min</span><span class="acc-chev">▼</span></div></div>
+    <div class="acc-header"><div class="acc-left"><span class="acc-icon">🦵</span><div><span class="acc-tag">Monday · Quads & glutes</span><span class="acc-title">Lower A</span></div></div><div class="acc-right"><span class="acc-meta">40 min · 3-sec lower</span><span class="acc-chev">▼</span></div></div>
     <div class="acc-body"><table class="ex-table"><tr><th>Exercise</th><th>Kit</th><th>Sets</th></tr>
     <tr><td><span class="ex-name">Goblet Squat</span><span class="ex-note">6kg at chest, sit deep, knees track over toes.</span></td><td><span class="kit-badge kb-navy">6KG</span></td><td><span class="sets-badge">4×15–20</span></td></tr>
     <tr><td><span class="ex-name">Reverse Lunge</span><span class="ex-note">6kg each hand, step back, drive through front heel.</span></td><td><span class="kit-badge kb-navy">6KG×2</span></td><td><span class="sets-badge">3×12/leg</span></td></tr>
     <tr><td><span class="ex-name">Bulgarian Split Squat</span><span class="ex-note">Rear foot on couch, 4kg each hand. Slow + deep.</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">3×10/leg</span></td></tr>
     <tr><td><span class="ex-name">Glute Bridge</span><span class="ex-note">6kg on hips, squeeze 1 sec at top.</span></td><td><span class="kit-badge kb-navy">6KG</span></td><td><span class="sets-badge">3×20</span></td></tr>
-    <tr><td><span class="ex-name">Calf Raise</span><span class="ex-note">6kg each hand, full range, pause at top.</span></td><td><span class="kit-badge kb-navy">6KG×2</span></td><td><span class="sets-badge">3×25</span></td></tr>
+    <tr><td><span class="ex-name">Standing Calf Raise</span><span class="ex-note">6kg each hand, full range, pause at top.</span></td><td><span class="kit-badge kb-navy">6KG×2</span></td><td><span class="sets-badge">3×25</span></td></tr>
     </table></div>
   </div>
   <div class="accordion" onclick="this.classList.toggle('open')">
-    <div class="acc-header"><div class="acc-left"><span class="acc-icon">🔥</span><div><span class="acc-tag">Saturday · 5 rounds · 40s on/20s off</span><span class="acc-title">Burn Circuit</span></div></div><div class="acc-right"><span class="acc-meta">25 min</span><span class="acc-chev">▼</span></div></div>
-    <div class="acc-body"><table class="ex-table"><tr><th>Move</th><th>Kit</th><th>Time</th></tr>
-    <tr><td><span class="ex-name">KB Swings</span></td><td><span class="kit-badge kb-yellow">4KG KB</span></td><td><span class="sets-badge">40s</span></td></tr>
-    <tr><td><span class="ex-name">Goblet Squats</span></td><td><span class="kit-badge kb-navy">6KG</span></td><td><span class="sets-badge">40s</span></td></tr>
-    <tr><td><span class="ex-name">Push-Ups</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">40s</span></td></tr>
-    <tr><td><span class="ex-name">Renegade Rows</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">40s</span></td></tr>
-    <tr><td><span class="ex-name">Mountain Climbers</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">40s</span></td></tr>
-    <tr><td><span class="ex-name">High Knees</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">40s</span></td></tr>
+    <div class="acc-header"><div class="acc-left"><span class="acc-icon">💪</span><div><span class="acc-tag">Tuesday · Push focus · superset shoulders</span><span class="acc-title">Upper A</span></div></div><div class="acc-right"><span class="acc-meta">40 min · 3-sec lower</span><span class="acc-chev">▼</span></div></div>
+    <div class="acc-body"><table class="ex-table"><tr><th>Exercise</th><th>Kit</th><th>Sets</th></tr>
+    <tr><td><span class="ex-name">Floor Press</span><span class="ex-note">Lie on mat, 4kg each hand. Pause when elbows touch floor.</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">4×12–15</span></td></tr>
+    <tr><td><span class="ex-name">Push-Ups</span><span class="ex-note">Bodyweight, slow down. On knees if needed. Go to near-failure.</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">3×max</span></td></tr>
+    <tr><td><span class="ex-name">Standing Overhead Press</span><span class="ex-note">4kg each hand, brace core, no leaning back.</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">3×12–15</span></td></tr>
+    <tr><td><span class="ex-name">Lateral Raise</span><span class="ex-note">2kg each hand, lift to shoulder height, slow down. (superset ↓)</span></td><td><span class="kit-badge kb-green">2KG×2</span></td><td><span class="sets-badge">3×18</span></td></tr>
+    <tr><td><span class="ex-name">Overhead Triceps Extension</span><span class="ex-note">One 4kg in both hands, behind head, elbows tucked.</span></td><td><span class="kit-badge kb-blue">4KG</span></td><td><span class="sets-badge">3×15</span></td></tr>
     </table></div>
   </div>
- 
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="acc-header"><div class="acc-left"><span class="acc-icon">🦵</span><div><span class="acc-tag">Thursday · Hamstrings & posterior · hinge focus</span><span class="acc-title">Lower B</span></div></div><div class="acc-right"><span class="acc-meta">40 min · 3-sec lower</span><span class="acc-chev">▼</span></div></div>
+    <div class="acc-body"><table class="ex-table"><tr><th>Exercise</th><th>Kit</th><th>Sets</th></tr>
+    <tr><td><span class="ex-name">Romanian Deadlift</span><span class="ex-note">6kg each hand, hinge hips back, feel the hamstring stretch.</span></td><td><span class="kit-badge kb-navy">6KG×2</span></td><td><span class="sets-badge">4×15</span></td></tr>
+    <tr><td><span class="ex-name">Kettlebell Swing</span><span class="ex-note">Yellow 4kg, explosive hip snap. Best posterior-chain + cardio combo.</span></td><td><span class="kit-badge kb-yellow">4KG KB</span></td><td><span class="sets-badge">4×20</span></td></tr>
+    <tr><td><span class="ex-name">Curtsy Lunge</span><span class="ex-note">4kg each hand, step diagonally behind — hits glute medius.</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">3×12/leg</span></td></tr>
+    <tr><td><span class="ex-name">Single-Leg RDL</span><span class="ex-note">2kg, balance + hinge on one leg. Slow and controlled.</span></td><td><span class="kit-badge kb-green">2KG</span></td><td><span class="sets-badge">3×10/leg</span></td></tr>
+    <tr><td><span class="ex-name">Step-Ups</span><span class="ex-note">6kg each hand onto a sturdy chair/step, drive through heel.</span></td><td><span class="kit-badge kb-navy">6KG×2</span></td><td><span class="sets-badge">3×12/leg</span></td></tr>
+    </table></div>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="acc-header"><div class="acc-left"><span class="acc-icon">💪</span><div><span class="acc-tag">Friday · Pull & arms · back focus</span><span class="acc-title">Upper B</span></div></div><div class="acc-right"><span class="acc-meta">40 min · squeeze the top</span><span class="acc-chev">▼</span></div></div>
+    <div class="acc-body"><table class="ex-table"><tr><th>Exercise</th><th>Kit</th><th>Sets</th></tr>
+    <tr><td><span class="ex-name">Bent-Over Row</span><span class="ex-note">6kg each hand, flat back, pull to ribs, squeeze shoulder blades.</span></td><td><span class="kit-badge kb-navy">6KG×2</span></td><td><span class="sets-badge">4×15</span></td></tr>
+    <tr><td><span class="ex-name">Single-Arm Row</span><span class="ex-note">6kg, hand & knee on chair, full stretch + pull.</span></td><td><span class="kit-badge kb-navy">6KG</span></td><td><span class="sets-badge">3×12/arm</span></td></tr>
+    <tr><td><span class="ex-name">Reverse Fly</span><span class="ex-note">2kg each hand, hinge forward, lift wide — rear delts.</span></td><td><span class="kit-badge kb-green">2KG×2</span></td><td><span class="sets-badge">3×18</span></td></tr>
+    <tr><td><span class="ex-name">Bicep Curl</span><span class="ex-note">6kg each hand, no swinging, 3-sec lower. Drop to 4kg when you fail.</span></td><td><span class="kit-badge kb-navy">6→4KG</span></td><td><span class="sets-badge">3×12+drop</span></td></tr>
+    <tr><td><span class="ex-name">Hammer Curl</span><span class="ex-note">4kg each hand, palms facing in — forearms + biceps.</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">3×15</span></td></tr>
+    </table></div>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="acc-header"><div class="acc-left"><span class="acc-icon">🔥</span><div><span class="acc-tag">Saturday · 5 rounds · 40s work / 20s rest</span><span class="acc-title">Burn Circuit</span></div></div><div class="acc-right"><span class="acc-meta">~25 min</span><span class="acc-chev">▼</span></div></div>
+    <div class="acc-body">
+      <div style="padding:10px 14px;font-size:10px;color:var(--muted);border-bottom:1px solid var(--border);">Go through all 6 back-to-back = 1 round. Rest 90s between rounds. Highest-calorie session — hits visceral fat hard.</div>
+      <table class="ex-table"><tr><th>Move</th><th>Kit</th><th>Time</th></tr>
+      <tr><td><span class="ex-name">Kettlebell Swings</span></td><td><span class="kit-badge kb-yellow">4KG KB</span></td><td><span class="sets-badge">40s</span></td></tr>
+      <tr><td><span class="ex-name">Goblet Squats</span></td><td><span class="kit-badge kb-navy">6KG</span></td><td><span class="sets-badge">40s</span></td></tr>
+      <tr><td><span class="ex-name">Push-Ups</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">40s</span></td></tr>
+      <tr><td><span class="ex-name">Renegade Rows (plank position)</span></td><td><span class="kit-badge kb-blue">4KG×2</span></td><td><span class="sets-badge">40s</span></td></tr>
+      <tr><td><span class="ex-name">Mountain Climbers</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">40s</span></td></tr>
+      <tr><td><span class="ex-name">High Knees / March</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">40s</span></td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="acc-header"><div class="acc-left"><span class="acc-icon">🟢</span><div><span class="acc-tag">Wednesday + any day · 2 rounds · ~10 min</span><span class="acc-title">Core Add-On Finisher</span></div></div><div class="acc-right"><span class="acc-meta">on the mat</span><span class="acc-chev">▼</span></div></div>
+    <div class="acc-body">
+      <div style="padding:10px 14px;font-size:10px;color:var(--muted);border-bottom:1px solid var(--border);">Zone-2 cardio on Wed: 35–45 min brisk incline walk where you can still talk. Low recovery cost, big fat-loss payoff.</div>
+      <table class="ex-table"><tr><th>Exercise</th><th>Kit</th><th>Sets</th></tr>
+      <tr><td><span class="ex-name">Plank</span><span class="ex-note">Hold, hips level, glutes tight.</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">45s</span></td></tr>
+      <tr><td><span class="ex-name">Dead Bug</span><span class="ex-note">Opposite arm + leg, low back pressed to mat.</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">12/side</span></td></tr>
+      <tr><td><span class="ex-name">Russian Twist</span><span class="ex-note">Hold 4kg, rotate side to side, feet up.</span></td><td><span class="kit-badge kb-blue">4KG</span></td><td><span class="sets-badge">20 total</span></td></tr>
+      <tr><td><span class="ex-name">Leg Raises</span><span class="ex-note">Lower slowly, no arching.</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">15</span></td></tr>
+      <tr><td><span class="ex-name">Side Plank</span><span class="ex-note">Each side.</span></td><td><span class="kit-badge kb-bw">BW</span></td><td><span class="sets-badge">30s/side</span></td></tr>
+      </table>
+    </div>
+  </div>
+
   <div class="section-title" style="margin-top:20px;">4-Week Progression</div>
   <div class="grid-2">
     <div class="card-dark" style="border-left:3px solid rgba(139,150,212,0.4)"><div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:rgba(139,150,212,0.5)">WK1</div><div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:4px">Groove the Form</div><div style="font-size:10px;color:var(--muted)">RPE 7. 3-sec lowering. Leave reps in the tank.</div></div>
@@ -605,12 +653,12 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="card-dark" style="border-left:3px solid var(--gold)"><div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--gold)">WK4</div><div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:4px">Peak Week</div><div style="font-size:10px;color:var(--muted)">Supersets, 45s rest, full rep ranges. Push hard.</div></div>
   </div>
 </div>
- 
+
 <!-- ══ EAT ══ -->
 <div class="page" id="page-eat">
   <div class="page-eyebrow">Nutrition</div>
   <div class="page-title">Eat</div>
- 
+
   <div class="section-title" style="color:var(--her)">Her Day — Build · No Eggs</div>
   <div style="background:var(--her-dim);border:1px solid rgba(139,150,212,0.2);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:10px;color:var(--muted);line-height:1.7;">⏰ Set 5 alarms: <strong style="color:var(--her)">07:30 · 10:30 · 13:00 · 16:00 · 19:30</strong></div>
   <div class="meal-list" style="margin-bottom:20px;">
@@ -620,7 +668,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="meal-row"><div class="meal-time">16:00<br>Desk</div><div><div class="meal-name">Greek Yogurt + Almond Butter + Honey</div><div class="meal-detail">Stir in 60 sec. Or whey shake if not hitting protein target.</div></div></div>
     <div class="meal-row"><div class="meal-time">19:30<br>Dinner</div><div><div class="meal-name">Salmon or Beef + Sweet Potato + Vegetables</div><div class="meal-detail">The one cooked meal. Drizzle olive oil generously.</div></div></div>
   </div>
- 
+
   <div class="section-title" style="color:var(--him)">Ahmed's Day — Recomp · 1,850 kcal</div>
   <div class="meal-list" style="margin-bottom:20px;">
     <div class="meal-row"><div class="meal-time him">07:30<br>Breakfast</div><div><div class="meal-name">Scrambled Eggs + Oats + Berries + Black Coffee</div><div class="meal-detail">3 eggs + 2 whites. 80g oats with berries. ~40g protein.</div></div></div>
@@ -628,7 +676,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="meal-row"><div class="meal-time him">16:30<br>Snack</div><div><div class="meal-name">Greek Yogurt + Nuts or Whey Shake</div><div class="meal-detail">Pre/post-workout protein hit.</div></div></div>
     <div class="meal-row"><div class="meal-time him">20:00<br>Dinner</div><div><div class="meal-name">Baked Fish or Lean Beef + Grilled Veg</div><div class="meal-detail">Lighter on carbs in the evening. Shared dinner with her.</div></div></div>
   </div>
- 
+
   <div class="section-title">Macros</div>
   <div class="section-label" style="color:var(--her)">Her — Build</div>
   <div class="macro-banner" style="margin-bottom:10px;">
@@ -650,14 +698,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="macro-div"></div>
     <div class="macro-cell"><span class="macro-val">65g</span><span class="macro-unit">fat</span><span class="macro-label">Fat</span></div>
   </div>
- 
+
   <div class="section-title" style="margin-top:16px;">Recipes</div>
   <div class="recipe-card" onclick="this.classList.toggle('open')"><div class="recipe-top"><span class="recipe-emoji">🍗</span><div class="recipe-name">Batch Garlic Lemon Chicken</div><div class="recipe-meta"><span class="recipe-tag rt-kcal">165 kcal/100g</span><span class="recipe-tag rt-protein">31g protein</span><span class="recipe-tag rt-time">30 min</span></div><div style="font-size:10px;color:var(--muted)">Both plans. Grill 1.5kg — covers 5 days.</div></div><div class="recipe-body"><div class="recipe-section">Ingredients</div><ul class="recipe-ing-list"><li>1.5kg chicken breasts</li><li>3 tbsp olive oil, 4 garlic cloves</li><li>2 lemons juiced + zested</li><li>1 tsp cumin, 1 tsp paprika, salt + pepper</li></ul><div class="recipe-section">Method</div><div class="recipe-steps"><div class="recipe-step">Pound breasts to even thickness (~2cm).</div><div class="recipe-step">Mix oil, garlic, lemon, spices. Marinate 15 min.</div><div class="recipe-step">Grill 6–7 min/side or bake 200°C for 25 min.</div><div class="recipe-step">Rest 5 min. Portion 180g (him) / 150g (her).</div></div></div></div>
   <div class="recipe-card" onclick="this.classList.toggle('open')"><div class="recipe-top"><span class="recipe-emoji">🐟</span><div class="recipe-name">Pan-Seared Salmon + Tahini</div><div class="recipe-meta"><span class="recipe-tag rt-kcal">280 kcal</span><span class="recipe-tag rt-protein">34g protein</span><span class="recipe-tag rt-time">12 min</span></div><div style="font-size:10px;color:var(--muted)">Her bone-density dinner. Omega-3 + calcium.</div></div><div class="recipe-body"><div class="recipe-section">Ingredients (2 fillets)</div><ul class="recipe-ing-list"><li>2 salmon fillets (150g each)</li><li>1 tbsp olive oil, salt, pepper, cumin</li><li>2 tbsp tahini, 1 lemon, 1 garlic clove, 2 tbsp warm water</li></ul><div class="recipe-section">Method</div><div class="recipe-steps"><div class="recipe-step">Pat salmon dry. Season with salt, pepper, cumin.</div><div class="recipe-step">Heat oil, skin-side down, 4 min. Flip, 3 min more.</div><div class="recipe-step">Mix tahini + lemon + garlic + water. Drizzle and serve.</div></div></div></div>
   <div class="recipe-card" onclick="this.classList.toggle('open')"><div class="recipe-top"><span class="recipe-emoji">🥣</span><div class="recipe-name">Overnight Oats (Ahmed)</div><div class="recipe-meta"><span class="recipe-tag rt-kcal">420 kcal</span><span class="recipe-tag rt-protein">22g protein</span><span class="recipe-tag rt-time">5 min prep</span></div><div style="font-size:10px;color:var(--muted)">Prep 5 jars Friday. Grab-and-go every morning.</div></div><div class="recipe-body"><div class="recipe-section">Ingredients (1 jar)</div><ul class="recipe-ing-list"><li>80g rolled oats, 200ml whole milk</li><li>1 tbsp chia seeds, 80g berries, 1 tsp honey</li></ul><div class="recipe-section">Method</div><div class="recipe-steps"><div class="recipe-step">Add oats + chia to jar. Pour milk over, stir.</div><div class="recipe-step">Add berries + honey. Seal, refrigerate overnight.</div><div class="recipe-step">Stir before eating. Lasts 3 days in fridge.</div></div></div></div>
   <div class="recipe-card" onclick="this.classList.toggle('open')"><div class="recipe-top"><span class="recipe-emoji">🥩</span><div class="recipe-name">Lean Beef + Garlic Spinach</div><div class="recipe-meta"><span class="recipe-tag rt-kcal">380 kcal</span><span class="recipe-tag rt-protein">42g protein</span><span class="recipe-tag rt-time">15 min</span></div><div style="font-size:10px;color:var(--muted)">Iron + creatine. Shared dinner. 3–4×/week.</div></div><div class="recipe-body"><div class="recipe-section">Ingredients (2 serves)</div><ul class="recipe-ing-list"><li>300g lean beef fillet, 200g baby spinach</li><li>4 garlic cloves, 2 tbsp olive oil, ½ lemon</li></ul><div class="recipe-section">Method</div><div class="recipe-steps"><div class="recipe-step">Season beef. Sear in hot oil 2–3 min/side. Rest + slice.</div><div class="recipe-step">In same pan, sauté garlic 1 min. Add spinach, toss until wilted.</div><div class="recipe-step">Finish with lemon juice. Serve spinach under beef.</div></div></div></div>
 </div>
- 
+
 <!-- ══ SHOP ══ -->
 <div class="page" id="page-shop">
   <div class="page-eyebrow">Weekly Logistics</div>
@@ -718,12 +766,12 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="check-item" data-who="her" onclick="toggleCheck(this)"><div class="checkbox-sq"></div><div class="ci-body"><div class="ci-name">Fenugreek (500mg capsules)</div><div class="ci-note">Optional — appetite + general health</div></div><span class="ci-qty">1 box</span></div>
   </div>
 </div>
- 
+
 <!-- ══ MORE ══ -->
 <div class="page" id="page-more">
   <div class="page-eyebrow">Reference</div>
   <div class="page-title">More</div>
- 
+
   <div class="section-title">Friday Meal Prep</div>
   <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px;">
     <div class="prep-step"><span class="ps-num">1</span><div><div class="ps-title">Preheat oven + start rice</div><div class="ps-detail">200°C. 3 cups dry rice into cooker. Both plans 4–5 days.</div></div><span class="ps-time">4:00</span></div>
@@ -735,7 +783,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div class="prep-step"><span class="ps-num">7</span><div><div class="ps-title">Chop salad base</div><div class="ps-detail">Cucumber, tomatoes, peppers → one large container. Both pull all week.</div></div><span class="ps-time">4:40</span></div>
     <div class="prep-step"><span class="ps-num">8</span><div><div class="ps-title">Set supplement stations</div><div class="ps-detail">Her stack by coffee machine. His by the dinner table.</div></div><span class="ps-time">4:45</span></div>
   </div>
- 
+
   <div class="section-title">Supplements</div>
   <div class="section-label" style="color:var(--her);margin-bottom:8px;">Her Stack</div>
   <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:12px;">
@@ -751,7 +799,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     <div style="background:var(--s2);padding:12px 14px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:start;gap:10px;"><div><div style="font-weight:700;color:var(--text);margin-bottom:2px;font-size:12px;">Omega-3 Fish Oil</div><div style="font-size:10px;color:var(--muted)">2–3g EPA+DHA. Shared bottle.</div></div><div style="font-size:9px;font-weight:700;color:var(--him);white-space:nowrap;text-align:right;">With<br>Dinner</div></div>
     <div style="background:var(--s2);padding:12px 14px;display:flex;justify-content:space-between;align-items:start;gap:10px;"><div><div style="font-weight:700;color:var(--text);margin-bottom:2px;font-size:12px;">Whey Protein (if needed)</div><div style="font-size:10px;color:var(--muted)">Only if not hitting 160g. One scoop post-workout.</div></div><div style="font-size:9px;font-weight:700;color:var(--him);white-space:nowrap;text-align:right;">Post<br>Workout</div></div>
   </div>
- 
+
   <div class="section-title">Honour Code</div>
   <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;font-size:11px;color:var(--muted);line-height:2.1;">
     ✦ &nbsp;Self-reported — no lying<br>
@@ -761,10 +809,348 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
     ✦ &nbsp;Tiebreaker: most workout sessions → rock paper scissors
   </div>
 </div>
- 
+
+<!-- ══ PROGRESS ══ -->
+<div class="page" id="page-progress">
+  <div class="page-eyebrow">Body Scan Tracker</div>
+  <div class="page-title">Pro<span>gress</span></div>
+  <div class="page-sub">Log weekly scan results. Charts update automatically. Tap a metric to see the full trend.</div>
+
+  <!-- WHO TOGGLE -->
+  <div style="display:flex;gap:8px;margin-bottom:20px;">
+    <button onclick="setProgressWho('her',this)" id="prog-btn-her" style="flex:1;padding:10px;border-radius:8px;border:1.5px solid var(--her);background:var(--her-dim);color:var(--her);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;">Arwa</button>
+    <button onclick="setProgressWho('him',this)" id="prog-btn-him" style="flex:1;padding:10px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;">Ahmed</button>
+  </div>
+
+  <!-- LOG ENTRY CARD -->
+  <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:16px;" id="prog-entry-card">
+    <div style="font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;">Log This Week's Scan</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
+      <div>
+        <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Weight (kg)</div>
+        <input id="p-weight" type="number" step="0.1" placeholder="46.9" style="width:100%;background:var(--s3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;outline:none;">
+      </div>
+      <div>
+        <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Body Fat %</div>
+        <input id="p-fat" type="number" step="0.1" placeholder="18.5" style="width:100%;background:var(--s3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;outline:none;">
+      </div>
+      <div>
+        <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Muscle Mass (kg)</div>
+        <input id="p-muscle" type="number" step="0.1" placeholder="36.3" style="width:100%;background:var(--s3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;outline:none;">
+      </div>
+      <div>
+        <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Bone Mass (kg)</div>
+        <input id="p-bone" type="number" step="0.01" placeholder="2.00" style="width:100%;background:var(--s3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;outline:none;">
+      </div>
+    </div>
+    <div style="margin-bottom:14px;">
+      <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Week</div>
+      <div style="display:flex;gap:6px;">
+        <button onclick="selectScanWeek(1,this)" class="scan-wk-btn active" data-wk="1" style="flex:1;padding:9px;border-radius:6px;border:1px solid var(--her);background:var(--her-dim);color:var(--her);font-size:10px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">W1</button>
+        <button onclick="selectScanWeek(2,this)" class="scan-wk-btn" data-wk="2" style="flex:1;padding:9px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:10px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">W2</button>
+        <button onclick="selectScanWeek(3,this)" class="scan-wk-btn" data-wk="3" style="flex:1;padding:9px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:10px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">W3</button>
+        <button onclick="selectScanWeek(4,this)" class="scan-wk-btn" data-wk="4" style="flex:1;padding:9px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:10px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">W4</button>
+      </div>
+    </div>
+    <button onclick="saveScan()" style="width:100%;padding:12px;border-radius:8px;border:none;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;background:var(--her-dim);color:var(--her);border:1px solid var(--her-glow);" id="prog-save-btn">Save Scan Entry</button>
+  </div>
+
+  <!-- STATS SUMMARY ROW -->
+  <div id="prog-summary" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px;">
+    <!-- filled by JS -->
+  </div>
+
+  <!-- CHARTS -->
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--text);letter-spacing:0.5px;margin-bottom:12px;">Weight Trend</div>
+  <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px;">
+    <canvas id="chart-weight" height="160"></canvas>
+  </div>
+
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--text);letter-spacing:0.5px;margin-bottom:12px;">Body Fat %</div>
+  <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px;">
+    <canvas id="chart-fat" height="120"></canvas>
+  </div>
+
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--text);letter-spacing:0.5px;margin-bottom:12px;">Muscle Mass</div>
+  <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px;">
+    <canvas id="chart-muscle" height="120"></canvas>
+  </div>
+
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--text);letter-spacing:0.5px;margin-bottom:12px;">Bone Mass</div>
+  <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:20px;">
+    <canvas id="chart-bone" height="120"></canvas>
+  </div>
+
+  <!-- BASELINE -->
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--text);letter-spacing:0.5px;margin-bottom:12px;">Baseline Scan</div>
+  <div id="baseline-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;">
+    <!-- filled by JS -->
+  </div>
+</div>
+
 <div class="g-toast" id="g-toast"></div>
- 
+
 <script>
+// Baseline scan values
+const BASELINE = {
+  her: { weight:46.9, fat:18.5, muscle:36.3, bone:2.00, bmi:17.2 },
+  him: { weight:82.65, fat:25, muscle:null, bone:null, bmi:null }
+};
+const TARGET = {
+  her: { weight:49, fat:18.5, muscle:37.5, bone:2.2 },
+  him: { weight:78, fat:20, muscle:null, bone:null }
+};
+
+let progWho = 'her';
+let scanWeek = 1;
+let progCharts = {};
+
+function setProgressWho(who, btn) {
+  progWho = who;
+  document.getElementById('prog-btn-her').style.cssText = 'flex:1;padding:10px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:\'DM Sans\',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;';
+  document.getElementById('prog-btn-him').style.cssText = 'flex:1;padding:10px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:\'DM Sans\',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;';
+  const active = document.getElementById('prog-btn-' + who);
+  const col = who === 'her' ? 'var(--her)' : 'var(--him)';
+  const dim = who === 'her' ? 'var(--her-dim)' : 'var(--him-dim)';
+  active.style.cssText = `flex:1;padding:10px;border-radius:8px;border:1.5px solid ${col};background:${dim};color:${col};font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;`;
+  // Update save button color
+  const sb = document.getElementById('prog-save-btn');
+  if(sb){ sb.style.background = dim; sb.style.color = col; sb.style.borderColor = col; }
+  // Update week buttons
+  document.querySelectorAll('.scan-wk-btn').forEach(b => {
+    if(b.classList.contains('active')){ b.style.borderColor=col; b.style.background=dim; b.style.color=col; }
+  });
+  // Load existing values for current week
+  loadScanInputs();
+  renderProgressCharts();
+  renderProgressSummary();
+  renderBaseline();
+}
+
+function selectScanWeek(wk, btn) {
+  scanWeek = wk;
+  document.querySelectorAll('.scan-wk-btn').forEach(b => {
+    b.style.borderColor = 'var(--border)';
+    b.style.background = 'transparent';
+    b.style.color = 'var(--muted)';
+    b.classList.remove('active');
+  });
+  const col = progWho === 'her' ? 'var(--her)' : 'var(--him)';
+  const dim = progWho === 'her' ? 'var(--her-dim)' : 'var(--him-dim)';
+  btn.style.borderColor = col; btn.style.background = dim; btn.style.color = col;
+  btn.classList.add('active');
+  loadScanInputs();
+}
+
+function loadScanInputs() {
+  const scans = G.scans || {};
+  const entry = (scans[progWho] || {})[scanWeek] || {};
+  document.getElementById('p-weight').value = entry.weight || '';
+  document.getElementById('p-fat').value = entry.fat || '';
+  document.getElementById('p-muscle').value = entry.muscle || '';
+  document.getElementById('p-bone').value = entry.bone || '';
+}
+
+async function saveScan() {
+  const w = parseFloat(document.getElementById('p-weight').value);
+  const f = parseFloat(document.getElementById('p-fat').value);
+  const m = parseFloat(document.getElementById('p-muscle').value);
+  const b = parseFloat(document.getElementById('p-bone').value);
+  if (!w && !f && !m && !b) { gToast('Enter at least one value', progWho); return; }
+  if (!G.scans) G.scans = {};
+  if (!G.scans[progWho]) G.scans[progWho] = {};
+  G.scans[progWho][scanWeek] = {
+    weight: w||null, fat: f||null, muscle: m||null, bone: b||null,
+    date: new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short'})
+  };
+  await gPush();
+  renderProgressCharts();
+  renderProgressSummary();
+  gToast('Scan saved! 📊', progWho);
+}
+
+function renderProgressSummary() {
+  const el = document.getElementById('prog-summary'); if(!el) return;
+  const scans = (G.scans || {})[progWho] || {};
+  const baseline = BASELINE[progWho];
+  const target = TARGET[progWho];
+  // Find latest entry
+  let latest = null;
+  for(let wk=4;wk>=1;wk--){ if(scans[wk]){ latest=scans[wk]; break; } }
+
+  const metrics = [
+    { label:'Weight', key:'weight', unit:'kg', target: target.weight, dir: progWho==='her'?'up':'down' },
+    { label:'Body Fat', key:'fat', unit:'%', target: target.fat, dir:'down' },
+    { label:'Muscle', key:'muscle', unit:'kg', target: target.muscle, dir:'up' },
+    { label:'Bone', key:'bone', unit:'kg', target: target.bone, dir:'up' },
+  ];
+  const col = progWho==='her' ? 'var(--her)' : 'var(--him)';
+
+  el.innerHTML = metrics.map(m => {
+    const base = baseline[m.key];
+    const curr = latest ? latest[m.key] : null;
+    const diff = curr && base ? (curr - base) : null;
+    const diffStr = diff !== null ? (diff>0?'+':'')+diff.toFixed(1)+m.unit : '—';
+    const diffCol = diff === null ? 'var(--muted)' :
+      (m.dir==='up' ? (diff>=0?'var(--him)':'var(--red)') : (diff<=0?'var(--him)':'var(--red)'));
+    return `<div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;">
+      <div style="font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">${m.label}</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:${col};line-height:1;">${curr ? curr+m.unit : base+m.unit}</div>
+      <div style="font-size:10px;font-weight:700;color:${diffCol};margin-top:4px;">${diffStr}</div>
+      <div style="font-size:9px;color:var(--muted);margin-top:2px;">→ ${m.target?m.target+m.unit:'—'}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderBaseline() {
+  const el = document.getElementById('baseline-cards'); if(!el) return;
+  const b = BASELINE[progWho];
+  const t = TARGET[progWho];
+  const col = progWho==='her' ? 'var(--her)' : 'var(--him)';
+  const items = [
+    {label:'Starting Weight', val: b.weight+'kg', target: t.weight+'kg'},
+    {label:'Starting Body Fat', val: b.fat+'%', target: t.fat+'%'},
+    {label:'Starting Muscle', val: b.muscle ? b.muscle+'kg' : 'Not recorded', target: t.muscle ? t.muscle+'kg' : '—'},
+    {label:'Starting Bone Mass', val: b.bone ? b.bone+'kg' : 'Not recorded', target: t.bone ? t.bone+'kg' : '—'},
+  ];
+  el.innerHTML = items.map(i => `
+    <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:14px;">
+      <div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">${i.label}</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:${col};margin-bottom:3px;">${i.val}</div>
+      <div style="font-size:9px;color:var(--gold);">Target: ${i.target}</div>
+    </div>`).join('');
+}
+
+function renderProgressCharts() {
+  const scans = (G.scans || {})[progWho] || {};
+  const baseline = BASELINE[progWho];
+  const col = progWho==='her' ? '#8B96D4' : '#7DB88A';
+  const labels = ['Base','W1','W2','W3','W4'];
+
+  const metrics = [
+    { id:'chart-weight', key:'weight', label:'Weight (kg)', color: col },
+    { id:'chart-fat',    key:'fat',    label:'Body Fat %',  color:'#C9A84C' },
+    { id:'chart-muscle', key:'muscle', label:'Muscle (kg)', color: col },
+    { id:'chart-bone',   key:'bone',   label:'Bone (kg)',   color:'#E09955' },
+  ];
+
+  metrics.forEach(m => {
+    const data = [baseline[m.key]];
+    [1,2,3,4].forEach(wk => data.push(scans[wk] ? scans[wk][m.key] : null));
+    drawChart(m.id, labels, data, m.label, m.color);
+  });
+}
+
+function drawChart(canvasId, labels, data, label, color) {
+  const canvas = document.getElementById(canvasId);
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.offsetWidth || 300;
+  canvas.width = W * window.devicePixelRatio;
+  canvas.height = canvas.offsetHeight * window.devicePixelRatio;
+  ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+  const w = W, h = canvas.offsetHeight;
+  ctx.clearRect(0,0,w,h);
+
+  const validData = data.filter(d => d !== null && d !== undefined);
+  if(validData.length < 1) {
+    ctx.fillStyle = '#6B6870';
+    ctx.font = '12px DM Sans';
+    ctx.textAlign = 'center';
+    ctx.fillText('No data yet — log your first scan', w/2, h/2);
+    return;
+  }
+
+  const pad = {top:10, right:16, bottom:28, left:44};
+  const cw = w - pad.left - pad.right;
+  const ch = h - pad.top - pad.bottom;
+  const min = Math.min(...validData) * 0.98;
+  const max = Math.max(...validData) * 1.02;
+
+  const xStep = cw / (labels.length - 1);
+  const yScale = (val) => ch - ((val - min) / (max - min)) * ch;
+
+  // Grid lines
+  ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+  ctx.lineWidth = 1;
+  for(let i=0;i<=4;i++){
+    const y = pad.top + (ch/4)*i;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left+cw, y); ctx.stroke();
+  }
+
+  // Y axis labels
+  ctx.fillStyle = '#6B6870'; ctx.font = '9px DM Sans'; ctx.textAlign = 'right';
+  for(let i=0;i<=4;i++){
+    const val = max - ((max-min)/4)*i;
+    ctx.fillText(val.toFixed(1), pad.left-4, pad.top + (ch/4)*i + 3);
+  }
+
+  // Area fill
+  const gradient = ctx.createLinearGradient(0, pad.top, 0, pad.top+ch);
+  gradient.addColorStop(0, color+'40');
+  gradient.addColorStop(1, color+'00');
+  ctx.beginPath();
+  let firstPoint = true;
+  data.forEach((d,i) => {
+    if(d === null || d === undefined) return;
+    const x = pad.left + i * xStep;
+    const y = pad.top + yScale(d);
+    if(firstPoint){ ctx.moveTo(x, pad.top+ch); ctx.lineTo(x,y); firstPoint=false; }
+    else ctx.lineTo(x,y);
+  });
+  // close area
+  let lastX = pad.left;
+  data.forEach((d,i) => { if(d !== null && d !== undefined) lastX = pad.left + i*xStep; });
+  ctx.lineTo(lastX, pad.top+ch);
+  ctx.closePath();
+  ctx.fillStyle = gradient; ctx.fill();
+
+  // Line
+  ctx.beginPath(); ctx.strokeStyle = color; ctx.lineWidth = 2.5; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+  firstPoint = true;
+  data.forEach((d,i) => {
+    if(d === null || d === undefined) return;
+    const x = pad.left + i * xStep;
+    const y = pad.top + yScale(d);
+    firstPoint ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+    firstPoint = false;
+  });
+  ctx.stroke();
+
+  // Dots + values
+  data.forEach((d,i) => {
+    if(d === null || d === undefined) return;
+    const x = pad.left + i * xStep;
+    const y = pad.top + yScale(d);
+    ctx.beginPath(); ctx.arc(x,y,4,0,Math.PI*2);
+    ctx.fillStyle = color; ctx.fill();
+    ctx.strokeStyle = '#0A0A0C'; ctx.lineWidth = 2; ctx.stroke();
+    // Value label
+    ctx.fillStyle = '#F0EDE8'; ctx.font = 'bold 9px DM Sans'; ctx.textAlign = 'center';
+    ctx.fillText(d.toFixed(1), x, y-9);
+  });
+
+  // X labels
+  ctx.fillStyle = '#6B6870'; ctx.font = '9px DM Sans'; ctx.textAlign = 'center';
+  labels.forEach((l,i) => {
+    ctx.fillText(l, pad.left + i * xStep, h - 6);
+  });
+}
+
+// Hook into tab switching to render charts when Progress is opened
+const _origTab = tab;
+function tab(page, btn) {
+  _origTab(page, btn);
+  if(page === 'progress') {
+    setTimeout(()=>{
+      renderProgressCharts();
+      renderProgressSummary();
+      renderBaseline();
+      loadScanInputs();
+    }, 50);
+  }
+}
+
 // ══ SUPABASE ══
 const SUPA_URL='https://bvemiopzxjvfyiylyunb.supabase.co';
 const SUPA_KEY='sb_publishable_zxDnAcYyWd9SL2nW7GISVw_232EVJW6';
@@ -772,7 +1158,7 @@ const supa=supabase.createClient(SUPA_URL,SUPA_KEY);
 const G_ROW_ID='game_state';
 let G={startDate:null,herTotal:0,himTotal:0,herWeek:[0,0,0,0],himWeek:[0,0,0,0],history:[],weekPrizes:['','','',''],grandPrize:'',claimedMissions:[]};
 let currentPlayer=null,syncChannel=null;
- 
+
 // ══ PLAYER SELECT ══
 async function selectPlayer(who){
   currentPlayer=who;
@@ -786,7 +1172,7 @@ async function selectPlayer(who){
   gSubscribe();
   gInit();
 }
- 
+
 // ══ LOAD ══
 async function gLoad(){
   setSyncStatus('syncing','Syncing...');
@@ -797,17 +1183,18 @@ async function gLoad(){
       throw new Error(JSON.stringify(error));
     }
     if(data&&data.data&&Object.keys(data.data).length>0)G={...G,...data.data};
-    else{G.startDate=new Date().toISOString().split('T')[0];await gPush();}
+    else{G.startDate='2025-06-07';await gPush();}
+    G.startDate='2025-06-07'; // always enforce challenge start date
     setSyncStatus('live','Live · synced');
   }catch(e){
     console.error('Load error:',e&&e.message?e.message:e);
     setSyncStatus('offline','Offline — local data');
     const raw=localStorage.getItem('aa1_v2');
     if(raw)try{G={...G,...JSON.parse(raw)};}catch(e2){}
-    if(!G.startDate)G.startDate=new Date().toISOString().split('T')[0];
+    G.startDate='2025-06-07';
   }
 }
- 
+
 // ══ PUSH ══
 async function gPush(){
   setSyncStatus('syncing','Saving...');
@@ -821,7 +1208,7 @@ async function gPush(){
     localStorage.setItem('aa1_v2',JSON.stringify(G));
   }
 }
- 
+
 // ══ SUBSCRIBE ══
 function gSubscribe(){
   if(syncChannel)syncChannel.unsubscribe();
@@ -830,6 +1217,10 @@ function gSubscribe(){
       if(payload.new&&payload.new.data){
         G={...G,...payload.new.data};
         gRenderScoreboard();gRenderHistory();gRenderWeekSum();gRenderMissions();gRestoreInputs();
+        // Refresh progress charts if on that tab
+        if(document.getElementById('page-progress').classList.contains('active')){
+          renderProgressCharts(); renderProgressSummary();
+        }
         const other=currentPlayer==='her'?'Ahmed':'Arwa';
         gToast(other+' updated! 🔄',currentPlayer==='her'?'him':'her');
         setSyncStatus('live','Live · synced');
@@ -840,27 +1231,21 @@ function gSubscribe(){
       if(s==='CLOSED')setSyncStatus('offline','Reconnecting...');
     });
 }
- 
+
 function setSyncStatus(state,label){
   const dot=document.getElementById('sync-dot'),lbl=document.getElementById('sync-label');
   if(!dot||!lbl)return;
   dot.className='sync-dot '+state;
   lbl.textContent=label;
 }
- 
+
 async function gSave(){
   const gp=document.getElementById('g-grand-prize'),wp=document.getElementById('g-weekly-prize');
   if(gp)G.grandPrize=gp.value;
   if(wp)G.weekPrizes[gCurrentWeek()-1]=wp.value;
   await gPush();
 }
- 
-function gCurrentDay(){
-  if(!G.startDate)return 1;
-  return Math.min(30,Math.max(1,Math.floor((new Date()-new Date(G.startDate))/(86400000))+1));
-}
-function gCurrentWeek(){return Math.min(4,Math.ceil(gCurrentDay()/7));}
- 
+
 // ══ TAB NAV ══
 function tab(page,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -873,7 +1258,7 @@ function tab(page,btn){
   if(page==='missions')gRenderMissions();
   if(page==='game'){gRenderScoreboard();gRestoreInputs();}
 }
- 
+
 // ══ TOGGLE LOG ══
 function gToggle(el){
   const who=el.dataset.who;
@@ -886,7 +1271,7 @@ function gToggle(el){
   document.querySelectorAll(`.log-item[data-who="${who}"].done`).forEach(i=>pts+=parseInt(i.dataset.pts));
   document.getElementById('g-'+who+'-today').textContent='+'+pts+' pts';
 }
- 
+
 async function gSubmit(who){
   if(who!==currentPlayer){gToast('You can only lock in your own day!',who);return;}
   const lock=document.getElementById('g-'+who+'-lock');
@@ -904,7 +1289,7 @@ async function gSubmit(who){
   await gPush();gRenderScoreboard();gRenderHistory();gRenderWeekSum();
   gToast((who==='her'?'Arwa':'Ahmed')+' locked in '+pts+' pts! 🔒',who);
 }
- 
+
 function gRenderScoreboard(){
   const h=G.herTotal,m=G.himTotal;
   ['her','him'].forEach(w=>{
@@ -927,7 +1312,7 @@ function gRenderScoreboard(){
   document.querySelectorAll('.log-card').forEach(c=>c.style.opacity='1');
   if(currentPlayer){const o=document.querySelector('.log-card.'+(currentPlayer==='her'?'him':'her'));if(o)o.style.opacity='0.55';}
 }
- 
+
 function gRenderHistory(){
   const el=document.getElementById('g-history');if(!el)return;
   if(!G.history.length){el.innerHTML='<div style="padding:20px;text-align:center;color:var(--muted);font-size:12px;">No days logged yet.</div>';return;}
@@ -936,7 +1321,7 @@ function gRenderHistory(){
     return`<div class="history-row"><div class="hr-day">${h.day}</div><div class="hr-label">${h.date}</div><div class="hr-her">${h.herPts}</div><div class="hr-him">${h.himPts}</div><div class="hr-win ${w}">${w==='her'?'Arwa':w==='him'?'Ahmed':'Tie'}</div></div>`;
   }).join('');
 }
- 
+
 function gRenderWeekSum(){
   const el=document.getElementById('g-week-sum');if(!el)return;
   el.innerHTML=[1,2,3,4].map(w=>{
@@ -947,7 +1332,7 @@ function gRenderWeekSum(){
     return`<div class="wk-card" style="${cur?'border-color:var(--gold);':''}"><span class="wk-num-lbl">${cur?'▶ ':''}Week ${w}</span><span class="wk-winner-lbl" style="color:${past?wc:'var(--dim)'}">${past?winner:cur?'In Progress':'Upcoming'}</span><div class="wk-prize-lbl">${prize}</div><div class="wk-pts-row"><span style="color:var(--her)">Her:${h}</span><span style="color:var(--muted)">·</span><span style="color:var(--him)">Him:${m}</span></div></div>`;
   }).join('');
 }
- 
+
 const G_WEEKLY=[
   {id:'pw1',emoji:'🔥',title:'Perfect Week',desc:'Log all 7 days with a workout on each training day.',pts:50,who:'both'},
   {id:'3ws',emoji:'💪',title:'3-Workout Streak',desc:'3 workouts in a row without missing.',pts:30,who:'both'},
@@ -964,7 +1349,7 @@ const G_ALLTIME=[
   {id:'dpd',emoji:'🤝',title:'Double Perfect Day',desc:'Both log a perfect day on the same day.',pts:40,who:'both'},
   {id:'al8',emoji:'🧘',title:'Alo 8×',desc:'Arwa: 8 Alo Moves sessions total.',pts:25,who:'her'},
 ];
- 
+
 function gRenderMissions(){
   const w=document.getElementById('g-missions-weekly'),a=document.getElementById('g-missions-alltime');
   const card=c=>{
@@ -975,7 +1360,7 @@ function gRenderMissions(){
   if(w)w.innerHTML=G_WEEKLY.map(card).join('');
   if(a)a.innerHTML=G_ALLTIME.map(card).join('');
 }
- 
+
 async function gClaim(id,who,pts){
   if(G.claimedMissions.includes(id))return;
   if(who!=='both'&&who!==currentPlayer){gToast('This mission is for '+(who==='her'?'Arwa':'Ahmed'),who);return;}
@@ -985,7 +1370,7 @@ async function gClaim(id,who,pts){
   await gPush();gRenderScoreboard();gRenderMissions();
   gToast('Mission claimed! +'+pts+' pts 🎯',who==='both'?currentPlayer:who);
 }
- 
+
 function gToast(msg,who){
   const t=document.getElementById('g-toast');if(!t)return;
   t.textContent=msg;
@@ -993,19 +1378,19 @@ function gToast(msg,who){
   t.style.color=who==='her'?'var(--her)':'var(--him)';
   t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);
 }
- 
+
 async function gReset(){
   if(!confirm('Reset ALL game data? Cannot be undone.'))return;
   G={startDate:new Date().toISOString().split('T')[0],herTotal:0,himTotal:0,herWeek:[0,0,0,0],himWeek:[0,0,0,0],history:[],weekPrizes:['','','',''],grandPrize:'',claimedMissions:[]};
   await gPush();gInit();
 }
- 
+
 function gRestoreInputs(){
   const wp=document.getElementById('g-weekly-prize'),gp=document.getElementById('g-grand-prize');
   if(wp)wp.value=G.weekPrizes[gCurrentWeek()-1]||'';
   if(gp)gp.value=G.grandPrize||'';
 }
- 
+
 // ══ SHOPPING FILTER ══
 function filterShop(who,btn){
   document.querySelectorAll('.shop-filter').forEach(b=>{b.style.background='transparent';});
@@ -1015,7 +1400,7 @@ function filterShop(who,btn){
     item.style.display=who==='all'?'':who==='both'?(iw==='both'?'':'none'):(iw===who||iw==='both'?'':'none');
   });
 }
- 
+
 function toggleCheck(el){
   el.classList.toggle('done');
   const cb=el.querySelector('.checkbox-sq');
@@ -1023,7 +1408,7 @@ function toggleCheck(el){
   cb.style.background=el.classList.contains('done')?'var(--him)':'';
   cb.style.borderColor=el.classList.contains('done')?'var(--him)':'';
 }
- 
+
 // ══ INIT ══
 function gInit(){
   const d=new Date();
@@ -1031,15 +1416,26 @@ function gInit(){
   if(el)el.textContent=d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
   gRenderScoreboard();gRenderHistory();gRenderWeekSum();gRenderMissions();gRestoreInputs();
 }
- 
+
 // ══ PWA ══
 if('serviceWorker'in navigator){
   const sw=`const C='aa1-v2';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll([]))));self.addEventListener('fetch',e=>{if(e.request.url.includes('supabase'))return;e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));});`;
   const blob=new Blob([sw],{type:'application/javascript'});
   navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});
 }
- 
+
 // ══ BOOT ══
+const CHALLENGE_START = new Date('2025-06-07');
+const CHALLENGE_END = new Date('2025-07-06');
+
+function gCurrentDay(){
+  const now = new Date();
+  if(now < CHALLENGE_START) return 0;
+  if(now > CHALLENGE_END) return 30;
+  return Math.min(30, Math.max(1, Math.floor((now - CHALLENGE_START)/(86400000))+1));
+}
+function gCurrentWeek(){return Math.min(4,Math.ceil(Math.max(1,gCurrentDay())/7));}
+
 const saved=sessionStorage.getItem('aa1_player');
 if(saved)selectPlayer(saved);
 else setSyncStatus('syncing','Tap your name to start...');
